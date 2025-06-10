@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 services:
   bokeh:
@@ -10,10 +10,7 @@ services:
     image: discover-ccg:master
     command: ["/opt/serve-app.sh"]
     environment:
-      PYTHONPATH: '/project'
-      SHELL: '/bin/bash'
-
-    volumes:
-     - './data:/project/discover-ccg/data'
+      PYTHONPATH: "/project"
+      SHELL: "/bin/bash"
     ports:
-      - '3249:5006'
+      - "3249:5006"
