@@ -11,8 +11,8 @@ import bokeh.models as bmd
 from bokeh.models.widgets import PreText, Button
 from bokeh.io import curdoc
 from jsmol_bokeh_extension import JSMol
-#from import_db import get_cif_content as get_cif_str
-from import_db import get_cif_content_from_os as get_cif_str
+from import_db import get_cif_content as get_cif_str
+#from import_db import get_cif_content_from_os as get_cif_str
 from detail.query import get_sqlite_data as get_data
 
 html = bmd.Div(

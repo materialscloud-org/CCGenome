@@ -25,7 +25,9 @@ Feel free to adapt this app to your own needs:
 
 ### Input data
 
-The data has been already converted to a sql db, for use in the calculation methods.
+MUch of the data has been already converted to a sql db, for use in the calculation methods.
+For visualising individual structures you need to have a zipped "structures.tar.gz" containing all the structures at the same level as the docker-compose.
+This is availible on the MaterialsCloud S3.
 
 ### Plots
 
@@ -38,7 +40,7 @@ The plots can be configured using a few YAML files:
 ## Docker
 
 ```
-docker-compose build
-docker-compose up
-# open http://localhost:3245/ccg/select-figure
+docker compose build
+docker compose up
+# open http://localhost:3249/ccg/select-figure
 ```

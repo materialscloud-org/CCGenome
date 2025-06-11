@@ -18,7 +18,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && apt-get update \
     && apt-get install -y --no-install-recommends nodejs \
     && rm -rf /var/lib/apt/lists/*
-# --- FIX END ---
 
 # Copy bokeh app
 WORKDIR /project/discover-ccg
@@ -38,6 +37,10 @@ RUN mkdir ./data
 COPY database.db ./data
 # not sure if this csv is used?
 COPY all_complexes.csv ./data
+
+# finally unzip structures.tar.gz into the data dir
+COPY structures.tar.gz /data/
+RUN tar -xzf /data/structures.tar.gz -C /data/
 
 # This environment variable can be changed at build time:
 #   docker build  --build-arg BOKEH_PREFIX=/abc
