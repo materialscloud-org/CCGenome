@@ -39,8 +39,8 @@ COPY database.db ./data
 COPY all_complexes.csv ./data
 
 # finally unzip structures.tar.gz into the data dir
-COPY structures.tar.gz /data/
-RUN tar -xzf /data/structures.tar.gz -C /data/
+COPY structures.tar.gz ./data/
+RUN tar -xzf ./data/structures.tar.gz -C ./data
 
 # This environment variable can be changed at build time:
 #   docker build  --build-arg BOKEH_PREFIX=/abc
