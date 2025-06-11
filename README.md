@@ -42,5 +42,5 @@ The plots can be configured using a few YAML files:
 ```
 docker compose build
 docker compose up
-# open http://localhost:3249/ccg/select-figure
+# open http://localhost:3249/select-figure
 ```

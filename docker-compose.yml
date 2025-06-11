@@ -6,7 +6,7 @@ services:
     build:
       context: .
       args:
-        BOKEH_PREFIX: /ccg
+        BOKEH_PREFIX: ""
     image: discover-ccg:master
     command: ["/opt/serve-app.sh"]
     environment:
