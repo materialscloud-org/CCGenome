@@ -41,7 +41,7 @@ COPY all_complexes.csv ./data
 
 # This environment variable can be changed at build time:
 #   docker build  --build-arg BOKEH_PREFIX=/abc
-ARG BOKEH_PREFIX="abc"
+ARG BOKEH_PREFIX=""
 ENV BOKEH_PREFIX $BOKEH_PREFIX
 
 # start bokeh server
