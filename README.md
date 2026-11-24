@@ -38,5 +38,5 @@ The app is currently deployed by hand to Cloudflare Pages with wrangler with no 
 
 ```bash
 pnpm build
-npx wrangler pages deploy dist --project-name ccgenome
+npx wrangler pages deploy dist --project-name discover-ccgenome
 ```
